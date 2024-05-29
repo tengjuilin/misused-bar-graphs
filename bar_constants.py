@@ -56,6 +56,9 @@ warnings.filterwarnings("ignore")
 DATA_DIR = "data"
 ZOTERO_DIR = "zotero_data"
 MISUSED_BAR_DIR = "misused_bar_graph_data"
+LOG_SUBDIR = 'log'
+ZERO_SUBDIR = 'zero'
+OTHERS_SUBDIR = 'others'
 
 # plot settings
 SWARM_LINEWIDTH = 1
@@ -76,6 +79,10 @@ SAMPLE_SIZE = 10
 # file extensions
 EXCEL_FILEEXT = '.xlsx'
 CSV_FILEEXT = '.csv'
+
+# file suffix
+VIZ_LABEL = 'viz'
+VAL_LABEL = 'val'
 
 # filenames
 bar_classification_filename = "bar-graph-classification"
