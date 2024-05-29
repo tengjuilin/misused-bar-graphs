@@ -8,9 +8,3 @@ __pycache__
 
 # temporary excel file
 ~$*
-
-# large output file numbers (>1e4)
-uniport_data
-
-# large output volume (GB)
-netsurfp_data
