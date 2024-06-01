@@ -47,6 +47,7 @@ def set_plot_rc():
         'legend.fontsize': 12,
 
         'animation.html': 'html5',
+        'pdf.fonttype': 42,
     })
 
 
@@ -86,9 +87,12 @@ VAL_LABEL = 'val'
 
 # filenames
 bar_classification_filename = "bar-graph-classification"
+bar_classification_sorted_filename = "bar-graph-classification-sorted"
 
 # filename with extensions
 bar_classification_filename_full = bar_classification_filename + EXCEL_FILEEXT
+bar_classification_sorted_filename_full = bar_classification_sorted_filename + EXCEL_FILEEXT
 
 # full filepath
 bar_classification_filepath = os.path.join(DATA_DIR, ZOTERO_DIR, bar_classification_filename_full)
+bar_classification_sorted_filepath = os.path.join(DATA_DIR, ZOTERO_DIR, bar_classification_sorted_filename_full)
