@@ -30,25 +30,94 @@ def set_plot_rc():
         'ytick.major.size': 8,
         'ytick.major.width': 2,
 
-        'xtick.minor.size': 4,
-        'xtick.minor.width': 1,
-        'ytick.minor.size': 4,
-        'ytick.minor.width': 1,
-
-        'xtick.labelsize': 14,
-        'ytick.labelsize': 14,
-
         'figure.dpi': 80,
         'savefig.dpi': 300,
 
-        'legend.framealpha': 0,
+        'legend.framealpha': 1,
         'legend.edgecolor': 'black',
         'legend.fancybox': False,
-        'legend.fontsize': 12,
+        'legend.fontsize': 14,
 
         'animation.html': 'html5',
         'pdf.fonttype': 42,
     })
+
+
+def set_save_fig_rc():
+    plt.rcParams.update({
+        'font.family': 'Arial',  # Times New Roman, Calibri
+        'font.weight': 'normal',
+        'mathtext.fontset': 'stixsans',
+        'font.size': 12,
+
+        'lines.linewidth': 1,
+
+        'axes.linewidth': 1,
+        'axes.spines.top': True,
+        'axes.spines.right': True,
+        'axes.titleweight': 'normal',
+        'axes.titlesize': 12,
+        'axes.labelweight': 'normal',
+
+        'xtick.major.size': 4,
+        'xtick.major.width': 1,
+        'ytick.major.size': 4,
+        'ytick.major.width': 1,
+
+        'figure.dpi': 80,
+        'savefig.dpi': 600,
+
+        'legend.framealpha': 1,
+        'legend.edgecolor': 'black',
+        'legend.fancybox': False,
+        'legend.fontsize': 10,
+
+        'animation.html': 'html5',
+        'pdf.fonttype': 42,
+    })
+
+
+
+# def set_plot_rc():
+#     plt.rcParams.update({
+#         'font.family': 'Arial',  # Times New Roman, Calibri
+#         'font.weight': 'normal',
+#         'mathtext.fontset': 'stixsans',
+#         'font.size': 18,
+#
+#         'lines.linewidth': 2,
+#
+#         'axes.linewidth': 2,
+#         'axes.spines.top': True,
+#         'axes.spines.right': True,
+#         'axes.titleweight': 'bold',
+#         'axes.titlesize': 18,
+#         'axes.labelweight': 'bold',
+#
+#         'xtick.major.size': 8,
+#         'xtick.major.width': 2,
+#         'ytick.major.size': 8,
+#         'ytick.major.width': 2,
+#
+#         'xtick.minor.size': 4,
+#         'xtick.minor.width': 1,
+#         'ytick.minor.size': 4,
+#         'ytick.minor.width': 1,
+#
+#         'xtick.labelsize': 14,
+#         'ytick.labelsize': 14,
+#
+#         'figure.dpi': 80,
+#         'savefig.dpi': 300,
+#
+#         'legend.framealpha': 0,
+#         'legend.edgecolor': 'black',
+#         'legend.fancybox': False,
+#         'legend.fontsize': 12,
+#
+#         'animation.html': 'html5',
+#         'pdf.fonttype': 42,
+#     })
 
 
 set_plot_rc()
