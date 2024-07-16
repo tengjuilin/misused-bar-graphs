@@ -6,7 +6,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+import statsmodels as sm
+import scipy
 
 # plot settings
 def set_plot_rc():
@@ -153,6 +154,26 @@ CSV_FILEEXT = '.csv'
 # file suffix
 VIZ_LABEL = 'viz'
 VAL_LABEL = 'val'
+
+# journal names
+JOURNALS = [
+    'acs_nano',
+    'bioeng_transl_med',
+    'cell',
+    'nat_biomed_eng',
+    'nat_biotechnol',
+    'nat_cancer',
+    'nat_cell_biol',
+    'nat_nanotechnol',
+    'nat_neurosci',
+    'nat_plants',
+    'nature',
+    'sci_immunol',
+    'sci_signal',
+    'sci_transl_med',
+    'science',
+]
+MISTAKES = [ZERO_SUBDIR, LOG_SUBDIR]
 
 # filenames
 bar_classification_filename = "bar-graph-classification"
