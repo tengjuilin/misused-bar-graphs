@@ -131,6 +131,51 @@ LOG_SUBDIR = 'log'
 ZERO_SUBDIR = 'zero'
 OTHERS_SUBDIR = 'others'
 
+# experimental groups
+ZERO_LABEL = 'Zero'
+LOG_LABEL = 'Log'
+OTHERS_LABEL = 'Others'
+
+# zotero column labels (fixed by zotero export)
+MANUAL_TAGS_LABEL = 'Manual Tags'
+PUBLICATION_LABEL = 'Publication Title'
+
+# zotero manual tag labels
+NO_BAR_GRAPH_REGEX_LABEL = 'No bar'
+NO_MISUSE_REGEX_LABEL = 'No problem'
+HAS_MISUSE_REGEX_LABEL = 'Zero|Log|Other'
+ZERO_PROBLEM_REGEX_LABEL = 'Zero'
+LOG_PROBLEM_REGEX_LABEL = 'Log'
+OTHER_PROBLEM_REGEX_LABEL = 'Other'
+
+# article df column labels
+HAS_BAR_GRAPH_LABEL = 'Has Bar Graph'
+NO_MISUSE_LABEL = 'Has Bar Graph, No Misuse'
+HAS_MISUSE_LABEL = 'Has Bar Graph, Has Misuse'
+ZERO_PROBLEM_LABEL = 'Zero Problem'
+LOG_PROBLEM_LABEL = 'Log Problem'
+OTHER_PROBLEM_LABEL = 'Other Problem'
+NUM_AUTHORS_LABEL = 'Number of Authors'
+
+# article statistics df column labels
+NUM_ARTICLES_LABEL = 'Total number of articles'
+NUM_ARTICLES_WITH_BAR_GRAPH_LABEL = 'Number of articles with bar graphs'
+NUM_ARTICLES_WITHOUT_BAR_GRAPH_LABEL = 'Number of articles without bar graphs'
+NUM_ARTICLES_CORRECT_BAR_GRAPH_LABEL = 'Number of articles with correct bar graphs'
+NUM_ARTICLES_INCORRECT_BAR_GRAPH_LABEL = 'Number of articles with incorrect bar graphs'
+NUM_ARTICLES_ZERO_PROBLEM_LABEL = 'Number of articles with nonzero bar graph y-min'
+NUM_ARTICLES_LOG_PROBLEM_LABEL = 'Number of articles with logarithmic bar graph y axis'
+NUM_ARTICLES_OTHER_PROBLEM_LABEL = 'Number of articles with other bar graph misrepresentations'
+PERCENT_ARTICLES_WITH_BAR_GRAPH_LABEL = 'Percentage of articles with bar graphs'
+PERCENT_ARTICLES_WITHOUT_BAR_GRAPH_LABEL = 'Percentage of articles without bar graphs'
+PERCENT_ARTICLES_CORRECT_BAR_GRAPH_LABEL = 'Percentage of articles with correct bar graphs'
+PERCENT_ARTICLES_INCORRECT_BAR_GRAPH_LABEL = 'Percentage of articles with incorrect bar graphs'
+PERCENT_ARTICLES_ZERO_PROBLEM_LABEL = 'Percentage of articles with nonzero bar graph y-min'
+PERCENT_ARTICLES_LOG_PROBLEM_LABEL = 'Percentage of articles with logarithmic bar graph y axis'
+PERCENT_ARTICLES_OTHER_PROBLEM_LABEL = 'Percentage of articles with other bar graph misrepresentations'
+TOTAL_LABEL = 'Total'
+
+
 # plot settings
 SWARM_LINEWIDTH = 1
 SWARM_MARKERSIZE = 4
