@@ -132,7 +132,7 @@ ZERO_SUBDIR = 'zero'
 OTHERS_SUBDIR = 'others'
 
 # experimental groups
-ZERO_LABEL = 'Zero'
+ZERO_LABEL = 'Zeroing'
 LOG_LABEL = 'Log'
 OTHERS_LABEL = 'Others'
 
@@ -175,6 +175,14 @@ PERCENT_ARTICLES_LOG_PROBLEM_LABEL = 'Percentage of articles with logarithmic ba
 PERCENT_ARTICLES_OTHER_PROBLEM_LABEL = 'Percentage of articles with other bar graph misrepresentations'
 TOTAL_LABEL = 'Total'
 
+# color scheme
+ARTICLES_WITH_BAR_GRAPH_COLOR = 'navy'
+ARTICLES_WITHOUT_BAR_GRAPH_COLOR = 'lightgray'
+ARTICLES_INCORRECT_BAR_GRAPH_COLOR = 'royalblue'
+ARTICLES_CORRECT_BAR_GRAPH_COLOR = 'lightgray'
+ARTICLES_ZERO_PROBLEM_COLOR = 'lightcoral'
+ARTICLES_LOG_PROBLEM_COLOR = 'mediumslateblue'
+ARTICLES_OTHER_PROBLEM_COLOR = 'goldenrod'
 
 # plot settings
 SWARM_LINEWIDTH = 1
