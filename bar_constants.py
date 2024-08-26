@@ -15,7 +15,7 @@ def set_plot_rc():
         'font.family': 'Arial',  # Times New Roman, Calibri
         'font.weight': 'normal',
         'mathtext.fontset': 'stixsans',
-        'font.size': 18,
+        'font.size': 14,
 
         'lines.linewidth': 2,
 
@@ -23,7 +23,7 @@ def set_plot_rc():
         'axes.spines.top': True,
         'axes.spines.right': True,
         'axes.titleweight': 'bold',
-        'axes.titlesize': 18,
+        'axes.titlesize': 14,
         'axes.labelweight': 'bold',
 
         'xtick.major.size': 8,
@@ -37,7 +37,7 @@ def set_plot_rc():
         'legend.framealpha': 1,
         'legend.edgecolor': 'black',
         'legend.fancybox': False,
-        'legend.fontsize': 14,
+        'legend.fontsize': 12,
 
         'animation.html': 'html5',
         'pdf.fonttype': 42,
@@ -197,8 +197,7 @@ BAR_ALPHA = 0.7
 BAR_WIDTH = 0.8
 
 # generate data
-np.random.seed(0)
-SAMPLE_SIZE = 10
+SAMPLE_SIZE = 1000
 
 # file extensions
 EXCEL_FILEEXT = '.xlsx'
