@@ -1,0 +1,33 @@
+# To use:
+#
+#   $ conda env create -f environment.yml
+#   $ conda activate misused-bar-graphs
+#
+name: misused-bar-graphs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - libgfortran==5.0.0.dev0  # pin version to avoid numpy ImportError
+  # basic data science
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  - matplotlib
+  - seaborn
+  - openpyxl  # for reading excel in pandas
+  # editor
+  - jupyter
+  - jupyterlab
+  - jupyterlab-spellchecker
+  - jupyterlab_code_formatter
+  - jupyterlab_widgets
+  - ipywidgets
+  - pip:
+    # jupyter lab code formatter
+    - black
+    - isort
+    # report mode
+    - jupyterlab-hide-code
