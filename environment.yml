@@ -9,15 +9,16 @@ channels:
 dependencies:
   - python=3.10
   - pip
-  - libgfortran==5.0.0.dev0  # pin version to avoid numpy ImportError
+  - libgfortran==5.0.0  # pin version to avoid numpy ImportError
   # basic data science
   - numpy
   - pandas
-  - scipy
+  - scipy>=1.12
   - statsmodels
   - matplotlib
   - seaborn
   - openpyxl  # for reading excel in pandas
+  - plotly  # for sankey diagram
   # editor
   - jupyter
   - jupyterlab
