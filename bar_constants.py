@@ -125,6 +125,8 @@ set_plot_rc()
 warnings.filterwarnings("ignore")
 
 DATA_DIR = "data"
+PROCESSED_DATA_DIR = 'processed_data'
+ARTICLE_CAT_SUBDIR = 'article_categorization'
 ZOTERO_DIR = "zotero_data"
 MISUSED_BAR_DIR = "misused_bar_graph_data"
 LOG_SUBDIR = 'log'
@@ -228,13 +230,31 @@ JOURNALS = [
 MISTAKES = [ZERO_SUBDIR, LOG_SUBDIR]
 
 # filenames
-bar_classification_filename = "bar-graph-classification"
-bar_classification_sorted_filename = "bar-graph-classification-sorted"
+articles_df_filename = 'articles_df'
+articles_stat_df_filename = 'articles_stat_df'
+percent_bar_df_filename = 'percent_bar_df'
+percent_bar_correct_df_filename = 'percent_bar_correct_df'
+percent_bar_incorrect_df_filename = 'percent_bar_incorrect_df'
+num_total_articles_series_filename = 'num_total_articles_series'
+num_articles_bar_graph_series_filename = 'num_articles_bar_graph_series'
+num_articles_misused_bar_graph_series_filename = 'num_articles_misused_bar_graph_series'
 
 # filename with extensions
-bar_classification_filename_full = bar_classification_filename + EXCEL_FILEEXT
-bar_classification_sorted_filename_full = bar_classification_sorted_filename + EXCEL_FILEEXT
+articles_df_filename_full = articles_df_filename + CSV_FILEEXT
+articles_stat_df_filename_full = articles_stat_df_filename + CSV_FILEEXT
+percent_bar_df_filename_full = percent_bar_df_filename + CSV_FILEEXT
+percent_bar_correct_df_filename_full = percent_bar_correct_df_filename + CSV_FILEEXT
+percent_bar_incorrect_df_filename_full = percent_bar_incorrect_df_filename + CSV_FILEEXT
+num_total_articles_series_filename_full = num_total_articles_series_filename + CSV_FILEEXT
+num_articles_bar_graph_series_filename_full = num_articles_bar_graph_series_filename + CSV_FILEEXT
+num_articles_misused_bar_graph_series_filename_full = num_articles_misused_bar_graph_series_filename + CSV_FILEEXT
 
 # full filepath
-bar_classification_filepath = os.path.join(DATA_DIR, ZOTERO_DIR, bar_classification_filename_full)
-bar_classification_sorted_filepath = os.path.join(DATA_DIR, ZOTERO_DIR, bar_classification_sorted_filename_full)
+articles_df_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, articles_df_filename_full)
+articles_stat_df_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, articles_stat_df_filename_full)
+percent_bar_df_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, percent_bar_df_filename_full)
+percent_bar_correct_df_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, percent_bar_correct_df_filename_full)
+percent_bar_incorrect_df_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, percent_bar_incorrect_df_filename_full)
+num_total_articles_series_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, num_total_articles_series_filename_full)
+num_articles_bar_graph_series_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, num_articles_bar_graph_series_filename_full)
+num_articles_misused_bar_graph_series_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, num_articles_misused_bar_graph_series_filename_full)
