@@ -124,11 +124,23 @@ def set_save_fig_rc():
 set_plot_rc()
 warnings.filterwarnings("ignore")
 
+# directory components and paths
+# # top level directory path
+PROJECT_PATH = os.path.dirname(os.path.dirname(__file__))  # one level up
+# # level 1 directory component
 DATA_DIR = "data"
-PROCESSED_DATA_DIR = 'processed_data'
-ARTICLE_CAT_SUBDIR = 'article_categorization'
-ZOTERO_DIR = "zotero_data"
+# # level 1 directory path
+DATA_PATH = os.path.join(PROJECT_PATH, DATA_DIR)
+# # level 2 directory component
 MISUSED_BAR_DIR = "misused_bar_graph_data"
+PROCESSED_DATA_DIR = 'processed_data'
+ZOTERO_DIR = "zotero_data"
+# # level 2 directory path
+MISUSED_BAR_PATH = os.path.join(DATA_PATH, MISUSED_BAR_DIR)
+PROCESSED_DATA_PATH = os.path.join(DATA_PATH, PROCESSED_DATA_DIR)
+ZOTERO_PATH = os.path.join(DATA_PATH, ZOTERO_DIR)
+# # level 3 directory component
+ARTICLE_CAT_SUBDIR = 'article_categorization'
 LOG_SUBDIR = 'log'
 ZERO_SUBDIR = 'zero'
 OTHERS_SUBDIR = 'others'
@@ -250,11 +262,11 @@ num_articles_bar_graph_series_filename_full = num_articles_bar_graph_series_file
 num_articles_misused_bar_graph_series_filename_full = num_articles_misused_bar_graph_series_filename + CSV_FILEEXT
 
 # full filepath
-articles_df_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, articles_df_filename_full)
-articles_stat_df_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, articles_stat_df_filename_full)
-percent_bar_df_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, percent_bar_df_filename_full)
-percent_bar_correct_df_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, percent_bar_correct_df_filename_full)
-percent_bar_incorrect_df_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, percent_bar_incorrect_df_filename_full)
-num_total_articles_series_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, num_total_articles_series_filename_full)
-num_articles_bar_graph_series_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, num_articles_bar_graph_series_filename_full)
-num_articles_misused_bar_graph_series_filepath = os.path.join(DATA_DIR, PROCESSED_DATA_DIR, ARTICLE_CAT_SUBDIR, num_articles_misused_bar_graph_series_filename_full)
+articles_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, articles_df_filename_full)
+articles_stat_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, articles_stat_df_filename_full)
+percent_bar_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, percent_bar_df_filename_full)
+percent_bar_correct_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, percent_bar_correct_df_filename_full)
+percent_bar_incorrect_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, percent_bar_incorrect_df_filename_full)
+num_total_articles_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, num_total_articles_series_filename_full)
+num_articles_bar_graph_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, num_articles_bar_graph_series_filename_full)
+num_articles_misused_bar_graph_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, num_articles_misused_bar_graph_series_filename_full)
