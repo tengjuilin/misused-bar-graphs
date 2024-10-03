@@ -151,6 +151,7 @@ FIG_POSTER_PATH = os.path.join(FIG_PATH, FIG_POSTER_DIR)
 FIG_GENERAL_SUBPANELS_PATH = os.path.join(FIG_PATH, FIG_GENERAL_SUBPANELS_DIR)
 # # level 3 directory component
 ARTICLE_CAT_SUBDIR = 'article_categorization'
+DISTORTION_METRIC_SUBDIR = 'data_distortion_metrics'
 LOG_SUBDIR = 'log'
 ZERO_SUBDIR = 'zero'
 OTHERS_SUBDIR = 'others'
@@ -263,6 +264,9 @@ num_total_articles_series_filename = 'num_total_articles_series'
 num_articles_bar_graph_series_filename = 'num_articles_bar_graph_series'
 num_articles_misused_bar_graph_series_filename = 'num_articles_misused_bar_graph_series'
 bar_annot_df_filename = 'bar_annot_df'
+bar_val_df_filename = 'bar_val_df'
+L_df_filename = 'L_df'
+cv_df_filename = 'cv_df'
 
 # filename with extensions
 articles_df_filename_full = articles_df_filename + CSV_FILEEXT
@@ -274,6 +278,9 @@ num_total_articles_series_filename_full = num_total_articles_series_filename + C
 num_articles_bar_graph_series_filename_full = num_articles_bar_graph_series_filename + CSV_FILEEXT
 num_articles_misused_bar_graph_series_filename_full = num_articles_misused_bar_graph_series_filename + CSV_FILEEXT
 bar_annot_df_filename_full = bar_annot_df_filename + CSV_FILEEXT
+bar_val_df_filename_full = bar_val_df_filename + CSV_FILEEXT
+L_df_filename_full = L_df_filename + CSV_FILEEXT
+cv_df_filename_full = cv_df_filename + CSV_FILEEXT
 
 # full filepath
 articles_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, articles_df_filename_full)
@@ -285,6 +292,9 @@ num_total_articles_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_C
 num_articles_bar_graph_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, num_articles_bar_graph_series_filename_full)
 num_articles_misused_bar_graph_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, num_articles_misused_bar_graph_series_filename_full)
 bar_annot_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, bar_annot_df_filename_full)
+bar_val_df_filepath = os.path.join(PROCESSED_DATA_PATH, DISTORTION_METRIC_SUBDIR, bar_val_df_filename_full)
+L_df_filepath = os.path.join(PROCESSED_DATA_PATH, DISTORTION_METRIC_SUBDIR, L_df_filename_full)
+cv_df_filepath = os.path.join(PROCESSED_DATA_PATH, DISTORTION_METRIC_SUBDIR, cv_df_filename_full)
 
 
 def get_figure_filepath(filename, loc=FIG_GENERAL_SUBPANELS_PATH):
@@ -297,6 +307,15 @@ article_categorization_filename = 'fig-1abc-article-stat'
 graph_bias_mitigation_filename = 'graph-bias-mitigation'
 author_num_correlation_filename = 'ex-fig-6-author-number-correlation'
 title_length_correlation_filename = 'title-length-correlation'
+
+# # `data-distortion-quantification`
+data_distortion_metrics_main_filename = 'fig-1defghi-data-distortion-metrics-main'
+data_distortion_metrics_filename = 'data-distortion-metrics'
+data_distortion_metrics_abs_rel_filename = 'data-distortion-metrics-by-abs-rel'
+data_distortion_metrics_measurand_ii_filename = 'ex-fig-8abcde-data-distortion-metrics-by-measurand-ii'
+data_distortion_metrics_measurand_i_filename = 'data-distortion-metrics-by-measurand-i'
+data_distortion_metrics_journals_filename = 'ex-fig-8fghij-data-distortion-metrics-by-journals'
+lie_factor_correlation_filename = 'ex-fig-7-lie-factor-correlation'
 
 # # `bar-graph-examples`
 example_zeroing_mistake_filename = 'ex-fig-1-zeroing-mistake'
