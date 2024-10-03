@@ -132,11 +132,13 @@ DATA_DIR = "data"
 # # level 1 directory path
 DATA_PATH = os.path.join(PROJECT_PATH, DATA_DIR)
 # # level 2 directory component
-MISUSED_BAR_DIR = "misused_bar_graph_data"
+MISUSED_BAR_DATA_DIR = "misused_bar_graph_data"
+MISUSED_BAR_FIG_DIR = "misused_bar_graph_figures"
 PROCESSED_DATA_DIR = 'processed_data'
 ZOTERO_DIR = "zotero_data"
 # # level 2 directory path
-MISUSED_BAR_PATH = os.path.join(DATA_PATH, MISUSED_BAR_DIR)
+MISUSED_BAR_DATA_PATH = os.path.join(DATA_PATH, MISUSED_BAR_DATA_DIR)
+MISUSED_BAR_FIG_PATH = os.path.join(DATA_PATH, MISUSED_BAR_FIG_DIR)
 PROCESSED_DATA_PATH = os.path.join(DATA_PATH, PROCESSED_DATA_DIR)
 ZOTERO_PATH = os.path.join(DATA_PATH, ZOTERO_DIR)
 # # level 3 directory component
@@ -250,6 +252,7 @@ percent_bar_incorrect_df_filename = 'percent_bar_incorrect_df'
 num_total_articles_series_filename = 'num_total_articles_series'
 num_articles_bar_graph_series_filename = 'num_articles_bar_graph_series'
 num_articles_misused_bar_graph_series_filename = 'num_articles_misused_bar_graph_series'
+bar_annot_df_filename = 'bar_annot_df'
 
 # filename with extensions
 articles_df_filename_full = articles_df_filename + CSV_FILEEXT
@@ -260,6 +263,7 @@ percent_bar_incorrect_df_filename_full = percent_bar_incorrect_df_filename + CSV
 num_total_articles_series_filename_full = num_total_articles_series_filename + CSV_FILEEXT
 num_articles_bar_graph_series_filename_full = num_articles_bar_graph_series_filename + CSV_FILEEXT
 num_articles_misused_bar_graph_series_filename_full = num_articles_misused_bar_graph_series_filename + CSV_FILEEXT
+bar_annot_df_filename_full = bar_annot_df_filename + CSV_FILEEXT
 
 # full filepath
 articles_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, articles_df_filename_full)
@@ -270,3 +274,4 @@ percent_bar_incorrect_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CA
 num_total_articles_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, num_total_articles_series_filename_full)
 num_articles_bar_graph_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, num_articles_bar_graph_series_filename_full)
 num_articles_misused_bar_graph_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, num_articles_misused_bar_graph_series_filename_full)
+bar_annot_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, bar_annot_df_filename_full)
