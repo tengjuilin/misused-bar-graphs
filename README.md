@@ -2,7 +2,7 @@
 
 T.-J. Lin, M.P. Landry*. Quantifying Data Distortion in Bar Graphs in Biological Research. *bioRxiv* (2024). [DOI: 10.1101/2024.09.20.609464](https://www.biorxiv.org/content/10.1101/2024.09.20.609464)
 
-## Analysis Jupyter Notebooks
+## Analysis Jupyter Notebooks (`/analysis/`)
 
 - `bar_constants.py`
   - Order: 1
@@ -43,6 +43,8 @@ T.-J. Lin, M.P. Landry*. Quantifying Data Distortion in Bar Graphs in Biological
   - Order: 2
   - Misused bar graphs are screenshotted and stored in folders by journals and mistake types
   - Each folder contains a CSV file storing the manually labeled metadata of each figure
+- `processed_data`
+  - Order: 5
 - `zotero_data`
   - Order: 1
   - CSV of Zotero export of articles included in the study
