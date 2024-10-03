@@ -292,7 +292,22 @@ def get_figure_filepath(filename, loc=FIG_GENERAL_SUBPANELS_PATH):
 
 # FIGURE FILES
 # filenames
+# # `bar-graph-classification-viz-article`
 article_categorization_filename = 'fig-1abc-article-stat'
 graph_bias_mitigation_filename = 'graph-bias-mitigation'
 author_num_correlation_filename = 'ex-fig-6-author-number-correlation'
 title_length_correlation_filename = 'title-length-correlation'
+
+# # `bar-graph-examples`
+example_zeroing_mistake_filename = 'ex-fig-1-zeroing-mistake'
+example_log_mistake_numerical_filename = 'ex-fig-2-log-mistake-numerical'
+example_log_mistake_ratio_rel_filename = 'ex-fig-3-log-mistake-ratio-relative'
+example_log_mistake_ratio_abs_filename = 'ex-fig-4-log-mistake-ratio-absolute'
+example_single_value_filename = 'ex-fig-5-single-value'
+example_decision_tree_result_filename = 'ex-fig-9-decision-tree-result-example'
+example_bar_graph_guideline_filename = 'fig-2e-bar-graph-guideline'
+example_stacked_bar_graph_guideline_filename = 'stacked-bar-graph-guideline'
+
+# # `polar-bar-graphs`
+circular_bar_graph_filename = 'ex-fig-10abc-circular-bar-graphs'
+radial_bar_graph_filename = 'ex-fig-10def-radial-bar-graphs'
