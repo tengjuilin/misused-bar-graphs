@@ -139,12 +139,16 @@ MISUSED_BAR_FIG_DIR = "misused_bar_graph_figures"
 PROCESSED_DATA_DIR = 'processed_data'
 ZOTERO_DIR = "zotero_data"
 FIG_ARTICLE_SUBPANELS_DIR = 'article-subpanels'
+FIG_POSTER_DIR = 'poster-figures'
+FIG_GENERAL_SUBPANELS_DIR = 'general-subpanels'
 # # level 2 directory path
 MISUSED_BAR_DATA_PATH = os.path.join(DATA_PATH, MISUSED_BAR_DATA_DIR)
 MISUSED_BAR_FIG_PATH = os.path.join(DATA_PATH, MISUSED_BAR_FIG_DIR)
 PROCESSED_DATA_PATH = os.path.join(DATA_PATH, PROCESSED_DATA_DIR)
 ZOTERO_PATH = os.path.join(DATA_PATH, ZOTERO_DIR)
-FIG_ARTICLE_SUBPANELS_PATH = os.path.join(DATA_PATH, FIG_ARTICLE_SUBPANELS_DIR)
+FIG_ARTICLE_SUBPANELS_PATH = os.path.join(FIG_PATH, FIG_ARTICLE_SUBPANELS_DIR)
+FIG_POSTER_PATH = os.path.join(FIG_PATH, FIG_POSTER_DIR)
+FIG_GENERAL_SUBPANELS_PATH = os.path.join(FIG_PATH, FIG_GENERAL_SUBPANELS_DIR)
 # # level 3 directory component
 ARTICLE_CAT_SUBDIR = 'article_categorization'
 LOG_SUBDIR = 'log'
@@ -282,18 +286,13 @@ num_articles_bar_graph_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTIC
 num_articles_misused_bar_graph_series_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, num_articles_misused_bar_graph_series_filename_full)
 bar_annot_df_filepath = os.path.join(PROCESSED_DATA_PATH, ARTICLE_CAT_SUBDIR, bar_annot_df_filename_full)
 
+
+def get_figure_filepath(filename, loc=FIG_GENERAL_SUBPANELS_PATH):
+    return os.path.join(loc, filename + PDF_FILEEXT)
+
 # FIGURE FILES
 # filenames
-article_categorization_filename = ''
-graph_bias_mitigation_filename = '0-graph_bias_mitigation'
+article_categorization_filename = 'fig-1abc-article-stat'
+graph_bias_mitigation_filename = 'graph-bias-mitigation'
 author_num_correlation_filename = 'ex-fig-6-author-number-correlation'
-
-# filename with extensions
-article_categorization_filename_full = article_categorization_filename + PDF_FILEEXT
-graph_bias_mitigation_filename_full = author_num_correlation_filename + PDF_FILEEXT
-author_num_correlation_filename_full = author_num_correlation_filename + PDF_FILEEXT
-
-# full filepath
-article_categorization_filepath = os.path.join(FIG_ARTICLE_SUBPANELS_PATH, article_categorization_filename_full)
-graph_bias_mitigation_filepath = os.path.join(FIG_ARTICLE_SUBPANELS_PATH, graph_bias_mitigation_filename_full)
-author_num_correlation_filepath = os.path.join(FIG_ARTICLE_SUBPANELS_PATH, author_num_correlation_filename_full)
+title_length_correlation_filename = 'title-length-correlation'
