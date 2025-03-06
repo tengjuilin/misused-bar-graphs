@@ -4,6 +4,7 @@
 # Python cache
 .ipynb_checkpoints
 .idea
+.jupyter
 __pycache__
 
 # temporary excel file
